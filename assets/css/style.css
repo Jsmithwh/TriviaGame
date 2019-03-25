@@ -1,0 +1,75 @@
+body {
+    background-image: url("../images/morocco.png");
+}
+
+#startBtn {
+    position: absolute;
+    top: 400px;
+    left:250px;
+    width:200px;
+    height: 50px;
+
+}
+
+.jumbotron {
+   text-align: center;
+   margin-right: 20%;
+   margin-left: 20%;
+   margin-top: 5%;
+   margin-bottom:5%;
+   background-image: url("../images/fabric_of_squares_gray.png");
+   background-size: cover;
+}
+
+h1 {
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#gimmeQuestion1 {
+    font-weight: bold;
+    font-size: large;
+}
+
+#gimmeQuestion2 {
+    font-weight: bold;
+    font-size: large;
+}
+
+#gimmeQuestion3 {
+    font-weight: bold;
+    font-size: large;
+}
+
+#gimmeQuestion4 {
+    font-weight: bold;
+    font-size: large;
+}
+
+#gimmeQuestion5 {
+    font-weight: bold;
+    font-size: large;
+}
+
+#gimmeQuestion6 {
+    font-weight: bold;
+    font-size: large;
+}
+
+#gimmeQuestion7 {
+    font-weight: bold;
+    font-size: large;
+}
+
+#gimmeQuestion8 {
+    font-weight: bold;
+    font-size: large;
+}
+/* 
+<div class="form-popup"id="myForm">
+            <form action="/action_page.php" class="form-container">
+
+<button type="button" class="open-button" onclick="openForm()">START</button>
+ <input type="button" class="btn-cancel" onclick="closeForm()">
+ */
+

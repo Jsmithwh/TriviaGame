@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+  <head>
+
+    <meta charset='UTF-8'>
+    <title>Trivia Game</title>
+
+    <!-- Bootstrap CDN -->
+    <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  </head>
+
+  <body>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
+   
+
+<button type="button"id="startBtn" onclick="initialize()">START</button>
+
+  <div class="jumbotron" id="myForm" background-color:transparent !important;>
+        <h1 class="text-center">Sew Cool Trivia Game!</h1>
+
+        
+        <div id="time-left">
+            
+        </div>
+
+        <div class="text-center" id="gimmeQuestion1">
+          <p>What do you do if somebody uses your fabric scissors to cut paper?</p>
+        </div>
+          <div class="form-check form-check-inline" id="gimmeAnswer1">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+            <label class="form-check-label" for="inlineRadio1">You remove them from your life</label>
+          </div>
+          <div class="form-check form-check-inline" id="gimmeAnswer2">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <label class="form-check-label" for="inlineRadio2">You take them to your nearest fabric store to be sharpened</label>
+          </div>
+          <div class="form-check form-check-inline" id="gimmeAnswer3">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <label class="form-check-label" for="inlineRadio2">All of the above</label>
+          </div>
+        
+<br>
+        <div class="text-center" id="gimmeQuestion2">
+            <p>What is the name of the embroidery stitch that incolves pushing a needle up through fabric, looping floss three times around the needle, then pulling the floss tight as you push the needle back down into the fabric?</p>
+          </div>
+            <div class="form-check form-check-inline" id="gimmeAnswer1">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+          <label class="form-check-label" for="inlineRadio1">The chinese loop</label>
+        </div>
+        <div class="form-check form-check-inline" id="gimmeAnswer2">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+          <label class="form-check-label" for="inlineRadio2">The lazy daisy stitch</label>
+        </div>
+        <div class="form-check form-check-inline" id="gimmeAnswer3">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+          <label class="form-check-label" for="inlineRadio2">The French Knot</label>
+        </div>
+      
+<br>   
+
+      <div class="text-center" id="gimmeQuestion3">
+          <p>How wide is your average cotton quilting fabric?</p>  
+        </div> 
+      <div class="form-check form-check-inline" id="gimmeAnswer1">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+          <label class="form-check-label" for="inlineRadio1">44 inches</label>
+        </div>
+        <div class="form-check form-check-inline" id="gimmeAnswer2">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+          <label class="form-check-label" for="inlineRadio2">36 inches</label>
+        </div>
+        <div class="form-check form-check-inline" id="gimmeAnswer3">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+          <label class="form-check-label" for="inlineRadio2">60 inches</label>
+        </div>
+    
+<br>
+      <div class="text-center" id="gimmeQuestion4">
+          <p>What should you make your first draft out of?"</p>  
+        </div> 
+      <div class="form-check form-check-inline" id="gimmeAnswer1">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+          <label class="form-check-label" for="inlineRadio1">Muslin</label>
+        </div>
+        <div class="form-check form-check-inline" id="gimmeAnswer2">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+          <label class="form-check-label" for="inlineRadio2">Quilting Cotton</label>
+        </div>
+        <div class="form-check form-check-inline" id="gimmeAnswer3">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+          <label class="form-check-label" for="inlineRadio2">The same kind of fabric that you intend to sew with</label>
+        </div>
+     
+<br>
+      <div class="text-center" id="gimmeQuestion5">
+          <p>What do you use to cut fabric to reduce fraying at the seams?"</p>  
+        </div> 
+      <div class="form-check form-check-inline" id="gimmeAnswer1">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+          <label class="form-check-label" for="inlineRadio1">Pinking shears</label>
+        </div>
+        <div class="form-check form-check-inline" id="gimmeAnswer2">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+          <label class="form-check-label" for="inlineRadio2">A cauteriser</label>
+        </div>
+        <div class="form-check form-check-inline" id="gimmeAnswer3">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+          <label class="form-check-label" for="inlineRadio2">Your regular fabric shears</label>
+        </div>
+      
+<br>
+      <div class="text-center" id="gimmeQuestion6">
+          <p>What is the most common seam allowance on American patterns?</p>  
+        </div> 
+      <div class="form-check form-check-inline" id="gimmeAnswer1">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+          <label class="form-check-label" for="inlineRadio1">1 inch</label>
+        </div>
+        <div class="form-check form-check-inline" id="gimmeAnswer2">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+          <label class="form-check-label" for="inlineRadio2">2 inches</label>
+        </div>
+        <div class="form-check form-check-inline" id="gimmeAnswer3">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+          <label class="form-check-label" for="inlineRadio2">1/2 an inch</label>
+        </div>
+     
+<br>
+      <div class="text-center" id="gimmeQuestion7">
+          <p>What is the best way to tell that you are truly cutting fabric on the grain?</p> 
+        </div>  
+      <div class="form-check form-check-inline" id="gimmeAnswer1">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+          <label class="form-check-label" for="inlineRadio1">Match the selvage edges</label>
+        </div>
+        <div class="form-check form-check-inline" id="gimmeAnswer2">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+          <label class="form-check-label" for="inlineRadio2">Line up the pattern</label>
+        </div>
+        <div class="form-check form-check-inline" id="gimmeAnswer3">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+          <label class="form-check-label" for="inlineRadio2">Your guess is as good as mine</label>
+        </div>
+      
+<br>
+      <div class="text-center" id="gimmeQuestion8">
+          <p>What part of your body is the closest measurement to a yard?</p>
+        </div>  
+      <div class="form-check form-check-inline" id="gimmeAnswer1">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+          <label class="form-check-label" for="inlineRadio1">Your hip to your ankle</label>
+        </div>
+        <div class="form-check form-check-inline" id="gimmeAnswer2">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+          <label class="form-check-label" for="inlineRadio2">Your nose to your fingertip</label>
+        </div>
+        <div class="form-check form-check-inline" id="gimmeAnswer3">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+          <label class="form-check-label" for="inlineRadio2">Your jaw to your knees</label>
+        </div>
+        <br>
+        <input type="button" onclick="subBtn()" value="Submit form">
+  </div>
+
+<div id= "answerArea"></div>
+
+  </body>
+</html>
